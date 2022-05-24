@@ -1,7 +1,7 @@
 # Knowledge Management
 
 
-[![website](./images/instagram.svg)](example.com)
-&nbsp;&nbsp;
+<!-- [![website](./images/instagram.svg)](example.com) -->
+<!-- &nbsp;&nbsp; -->
 
 
