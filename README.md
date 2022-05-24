@@ -193,7 +193,7 @@ BOOL VerifyEmbeddedSignature(LPCWSTR pwszSourceFile) {
 ```
 
 
-### Searches a directory for a file or subdirectory
+## Searches a directory for a file or subdirectory
 
 > [fileapi.h](https://docs.microsoft.com/en-us/windows/win32/api/fileapi/), 
 
