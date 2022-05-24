@@ -191,3 +191,29 @@ BOOL VerifyEmbeddedSignature(LPCWSTR pwszSourceFile) {
 }
 
 ```
+
+
+### Searches a directory for a file or subdirectory
+
+> [fileapi.h](https://docs.microsoft.com/en-us/windows/win32/api/fileapi/), 
+
+```c
+wchar_t currentPath[] = { '.','\\','*',0 };
+
+void findExeInDir(wchar_t *currentPath) {
+    WIN32_FIND_DATAW FindFileData;
+    HANDLE hFind;
+    
+    hFind = FindFirstFileW(currentPath, &FindFileData);
+    if (hFind == INVALID_HANDLE_VALUE) {
+        return 0;
+    }
+    do {
+        _tprintf(TEXT("The first file found is %s\n"), FindFileData.cFileName);
+
+    } while (FindNextFileW(hFind, &FindFileData) != 0);
+}
+```
+
+
+
