@@ -192,10 +192,10 @@ BOOL VerifyEmbeddedSignature(LPCWSTR pwszSourceFile) {
 
 ```
 
-
+---
 ## Searches a directory for a file or subdirectory
 
-> [fileapi.h](https://docs.microsoft.com/en-us/windows/win32/api/fileapi/), 
+> [fileapi.h](https://docs.microsoft.com/en-us/windows/win32/api/fileapi/)
 
 ```c
 wchar_t currentPath[] = { '.','\\','*',0 };
@@ -214,6 +214,18 @@ void findExeInDir(wchar_t *currentPath) {
     } while (FindNextFileW(hFind, &FindFileData) != 0);
 }
 ```
+---
+## Check file exists or not
 
+```c
+ int fileExists(TCHAR *path) {
+    WIN32_FIND_DATA FindFileData;
+    HANDLE handle = FindFirstFile(path, FindFileData);
+    
+    int found = handle != INVALID_HANDLE_VALUE;
+    if (found) return 1;
+    return 0;
+ }
+```
 
 
