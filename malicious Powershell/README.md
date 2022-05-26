@@ -49,3 +49,19 @@ The following is a quick explanation of the arguments:
 - -W Hidden – shorthand for “-WindowStyle Hidden”, which indicates that the PowerShell session window should be started in a hidden manner.
 - -Exec Bypass – shorthand for “-ExecutionPolicy Bypass”, which disables the execution policy for the current PowerShell session (default disallows execution). It should be noted that the Execution Policy isn’t meant to be a security boundary.
 - -encodedcommand – indicates the following chunk of text is a base64 encoded command.
+
+--- 
+Check version of powershell 
+        
+        $PSVersionTable
+
+| Name                           | Value                      |
+|:------------------------------:|:--------------------------:|                         
+| PSVersion                      | 5.1.19041.1682             |
+| PSEdition                      | Desktop                    |
+| PSCompatibleVersions           | {1.0, 2.0, 3.0, 4.0...}    |
+| BuildVersion                   | 10.0.19041.1682            |
+| CLRVersion                     | 4.0.30319.42000            |
+| WSManStackVersion              | 3.0                        |
+| PSRemotingProtocolVersion      |2.3                         |
+| SerializationVersion           | 1.1.0.1                    |  
