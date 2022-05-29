@@ -3,10 +3,16 @@
 [![alt-text](https://img.shields.io/maintenance/no/2022)](https://github.com/Phongtran1201/Knowledge.git)
 [![alt-text](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fexmple.com)](https://github.com/Phongtran1201/Knowledge.git)
 [![alt-text](https://img.shields.io/github/followers/Phongtran1201?style=social)](https://github.com/Phongtran1201/Knowledge.git)
+<p align="center">
+  <img 
+    width="300"
+    height="300"
+    src="https://cdn-icons-png.flaticon.com/512/1313/1313837.png"
+  >
+</p>
 
-# Knowledge Management
 
-
+# Knowledge Management     
 <!-- [![website](./images/instagram.svg)](example.com) -->
 <!-- &nbsp;&nbsp; -->
 ---
