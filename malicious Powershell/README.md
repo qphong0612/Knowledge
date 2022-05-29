@@ -1,3 +1,10 @@
+[![alt-text](https://img.shields.io/github/repo-size/Phongtran1201/knowledge)](https://github.com/Phongtran1201/Knowledge.git)
+[![alt-text](https://img.shields.io/github/languages/top/Phongtran1201/knowledge)](https://github.com/Phongtran1201/Knowledge.git)
+[![alt-text](https://img.shields.io/maintenance/no/2022)](https://github.com/Phongtran1201/Knowledge.git)
+[![alt-text](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fexmple.com)](https://github.com/Phongtran1201/Knowledge.git)
+[![alt-text](https://img.shields.io/github/followers/Phongtran1201?style=social)](https://github.com/Phongtran1201/Knowledge.git)
+
+
 
 # Malicious Powershell 
 In this series, I'll discuss why organizations should care about malicious Powershell activity, how the attackers use Powershell to steal credential(e.g.,Mimikatz) and how to prevent and detect malicious Powershell activity.
@@ -66,6 +73,8 @@ Check version of powershell
 | PSRemotingProtocolVersion      |2.3                         |
 | SerializationVersion           | 1.1.0.1                    |  
 
+
+
 # AMSI bypass methods
 ## How AMSI work.
 When a user executes a script or initiates PowerShell, the AMSI.dll is injected into the process memory space. Prior to execution the following two API’s are used by the antivirus to scan the buffer and strings for signs of malware.
@@ -105,4 +114,3 @@ A Sample Malicious PowerShell Process - To launch and Download a Remote File
 - https://docs.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps
 
 
-[![alt-text](https://img.shields.io/github/repo-size/Phongtran1201/knowledge)](https://github.com/Phongtran1201/Knowledge.git)
