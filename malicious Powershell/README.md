@@ -98,3 +98,11 @@ A Sample Malicious PowerShell Process - To launch and Download a Remote File
 - New-Object: -cmdlet creates an instance of a .NET framework or COM object
 - Net.webclient: Provides common methods for sending & receiving data from a resource indentified by a URI
 - e (encode) parameter indicates that what follows is base64 encoded
+
+
+
+# Preferences
+- https://docs.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps
+
+
+[![alt-text](https://img.shields.io/github/repo-size/Phongtran1201/knowledge)](https://github.com/Phongtran1201/Knowledge.git)
