@@ -1,3 +1,9 @@
+[![alt-text](https://img.shields.io/github/repo-size/Phongtran1201/knowledge)](https://github.com/Phongtran1201/Knowledge.git)
+[![alt-text](https://img.shields.io/github/languages/top/Phongtran1201/knowledge)](https://github.com/Phongtran1201/Knowledge.git)
+[![alt-text](https://img.shields.io/maintenance/no/2022)](https://github.com/Phongtran1201/Knowledge.git)
+[![alt-text](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fexmple.com)](https://github.com/Phongtran1201/Knowledge.git)
+[![alt-text](https://img.shields.io/github/followers/Phongtran1201?style=social)](https://github.com/Phongtran1201/Knowledge.git)
+
 # Knowledge Management
 
 
