@@ -112,5 +112,7 @@ A Sample Malicious PowerShell Process - To launch and Download a Remote File
 
 # Preferences
 - https://docs.microsoft.com/en-us/powershell/module/defender/set-mppreference?view=windowsserver2022-ps
+- https://github.com/danielbohannon/Revoke-Obfuscation/tree/master/DataScience
+- https://github.com/PowerShellMafia/PowerSploit
 
 
