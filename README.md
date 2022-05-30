@@ -4,6 +4,9 @@
     <img src="https://img.shields.io/twitter/follow/Noname?style=social">
   </a>
   
+  <img src="https://img.shields.io/github/repo-size/Phongtran1201/knowledge" >
+
+ 
   <a href="https://github.com/Phongtran1201">
     <img src="https://img.shields.io/github/followers/Phongtran1201?logo=Github&style=social">
   </a>
