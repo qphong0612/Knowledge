@@ -1,8 +1,14 @@
-[![alt-text](https://img.shields.io/github/repo-size/Phongtran1201/knowledge)](https://github.com/Phongtran1201/Knowledge.git)
-[![alt-text](https://img.shields.io/github/languages/top/Phongtran1201/knowledge)](https://github.com/Phongtran1201/Knowledge.git)
-[![alt-text](https://img.shields.io/maintenance/no/2022)](https://github.com/Phongtran1201/Knowledge.git)
-[![alt-text](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fexmple.com)](https://github.com/Phongtran1201/Knowledge.git)
-[![alt-text](https://img.shields.io/github/followers/Phongtran1201?style=social)](https://github.com/Phongtran1201/Knowledge.git)
+<p align="center"> 
+  <img src="https://img.shields.io/github/downloads/Phongtran1201/knowledge/total?logo=github&logoColor=%233A3A42"> 
+  <a href="https://example.com">
+    <img src="https://img.shields.io/twitter/follow/Noname?style=social">
+  </a>
+  
+  <a href="https://github.com/Phongtran1201">
+    <img src="https://img.shields.io/github/followers/Phongtran1201?logo=Github&style=social">
+  </a>
+</p>
+
 <p align="center">
   <img 
     width="300"
