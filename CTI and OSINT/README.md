@@ -22,3 +22,6 @@
 ## ...
 
 ## Demo 
+
+## Sumary
+- Threat Intelligence Sharing: OpenIoC, Structured Threat Information eXpression (STIX), Trusted Automated eXchange of Indicator Information (TAXII)
