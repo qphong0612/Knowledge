@@ -250,4 +250,59 @@ void findExeInDir(wchar_t *currentPath) {
  }
 ```
 
+---
 
+```c
+#include<stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <setjmp.h>
+
+jmp_buf savebuf;
+
+#define type_name(expr) \ 
+    (_Generic((expr), \ 
+              char: "char", unsigned char: "unsigned char", signed char: "signed char", \ 
+              short: "short", unsigned short: "unsigned short", \ 
+              int: "int", unsigned int: "unsigned int", \ 
+              long: "long", unsigned long: "unsigned long", \ 
+              long long: "long long", unsigned long long: "unsigned long long", \ 
+              float: "float", \ 
+              double: "double", \ 
+              long double: "long double", \ 
+              void*: "void*", \ 
+              default: "?")) 
+              
+int main(int argc, char ** argv) {
+	int i, j, n;
+	if (argc < 2) {
+		printf("use %s [number...]", argv[0]);
+	}
+	else {
+		if (setjmp(savebuf) == 0){
+			n = atof(argv[1]);
+		}	
+		else 
+			printf("\033[31m[*] - Invalid input\n");
+		for (i=n/2; i<=n;i+=2) {
+			for (j = 1; j < n - i; j+=2) 
+				printf(" ");
+			for (j = 1; j <= i; j++)
+			       printf ("\033[31m*");
+			for (j = 1; j <= n - i; j++)
+				printf(" ");
+			for (j = 1; j <= i; j++)
+				printf ("\033[31m*");
+			printf("\n");	
+		}
+		for (i = n; i >= 1; i--) {
+			for (j = i; j < n; j++)
+				printf (" ");
+			for (j = 1; j <= (i*2) - 1; j++)
+				printf ("\033[31m*");
+			printf("\n");
+		}
+	}
+	return 0;
+}
+```
