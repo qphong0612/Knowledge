@@ -279,11 +279,9 @@ int main(int argc, char ** argv) {
 		printf("use %s [number...]", argv[0]);
 	}
 	else {
-		if (setjmp(savebuf) == 0){
-			n = atof(argv[1]);
-		}	
-		else 
-			printf("\033[31m[*] - Invalid input\n");
+		n = atof(argv[1]);
+			 
+		//printf("\033[31m[*] - Invalid input\n");
 		for (i=n/2; i<=n;i+=2) {
 			for (j = 1; j < n - i; j+=2) 
 				printf(" ");
