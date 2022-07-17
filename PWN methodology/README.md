@@ -31,3 +31,13 @@ IIDA,Ghidra, Hopper
       objdump -D ./$bin_name -j .text -M intel
       objdump -TR ./$bin_name
       readelf -S ./$bin_name
+
+## GDB and GEF
+### Starting gdb
+```
+gbd program [core|pid]
+gdb gdb-option [--args program agrs]
+gdb -p pid 
+```
+
+At startup, gdb reads following the init files and execute commands: `/etc/gdb/gdbinit` and `~/.gdbinit` plus `./gdbinit` 
